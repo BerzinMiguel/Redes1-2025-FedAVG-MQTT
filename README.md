@@ -100,13 +100,16 @@ raiz_do_projeto/
 
 ## Como Executar🚀
 
-  **Inicie o Broker MQTT:**
-    Caso você seja o host, Abra um novo terminal e inicie o broker Mosquitto. Se você não tiver um arquivo `mosquitto.conf`, pode iniciar o Mosquitto com as configurações padrão:
-    ```bash
-    mosquitto
-    ```
-    Certifique-se de que o broker esteja ouvindo no endereço e porta configurados nos scripts (padrão: `localhost:1883`).
-
+Inicie o Broker MQTT:
+   Caso você seja o host, Abra um novo terminal e inicie o broker Mosquitto. no arquivo `mosquitto.conf`, coloque as instruções abaixo:
+   ```plaintext
+   adicionar :allow_anonymous true
+   listener 1883 0.0.0.0
+   listener 9001
+   protocol websockets
+   ```
+    
+---
   **Distribua o Dataset CIFAR-10 para os Clientes:**
     Este script irá baixar o CIFAR-10 (se necessário) e dividi-lo entre o número de clientes especificado. As pastas `clients/client_X/data/` serão criadas.
     Abra um terminal na raiz do projeto e execute:
