@@ -103,7 +103,7 @@ raiz_do_projeto/
 Inicie o Broker MQTT:
    Caso você seja o host, Abra um novo terminal e inicie o broker Mosquitto. no arquivo `mosquitto.conf`, coloque as instruções abaixo:
    ```plaintext
-   adicionar :allow_anonymous true
+   allow_anonymous true
    listener 1883 0.0.0.0
    listener 9001
    protocol websockets
