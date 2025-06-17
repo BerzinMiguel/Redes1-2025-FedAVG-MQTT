@@ -10,7 +10,7 @@ import sys
 from datetime import datetime
 import numpy as np # Importado para np.mean nas métricas.
 
-# --- LINHAS DE DEPURACÃO PARA O CAMINHO 'common' (Remova após verificar o funcionamento) ---
+# --- LINHAS DE DEPURACÃO PARA O CAMINHO 'common'  ---
 # Obtém o diretório do arquivo Python atual.
 current_dir = os.path.dirname(__file__)
 # Calcula o caminho absoluto para a pasta 'common'.
